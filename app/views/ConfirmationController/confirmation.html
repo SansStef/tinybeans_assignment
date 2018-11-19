@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'Confirmation' /}
+
+<div class="page">
+	
+  <h1>Success</h1>
+  
+  <div class="parent">
+
+  	<h2>Success!</h2>
+  
+  	<div class="confirmation">
+      <div class="productShot">
+        <img src="/public/images/success.png"/></a>
+      </div>
+      <label>
+        Your order id is ${orderId}
+      </label>
+  	  </br>
+      <label>
+        Your payment ref is ${paymentId}
+      </label>
+  	  </br>
+      <a href="/products">See Products</a>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.page {
+	background: grey;
+	max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+.parent {
+    width: 100%;
+    background: white;
+ }
+.child {
+	vertical-align:top;
+    display: inline-block;
+    margin-right: 50px;
+    width: 25%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+.productName {
+	font-weight: bold;
+	float: left;
+}
+.price {
+	float: right;
+}
+.productShot {
+	text-align: center;
+}
+.confirmation {
+	text-align: center;
+}

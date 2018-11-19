@@ -1,0 +1,42 @@
+#{extends 'main.html' /}
+#{set title:'Payment' /}
+<div class="page">
+	
+  <h1>Payment</h1>
+  
+  <div class="parent">
+
+  	<h2>Make Payment:</h2>
+
+  	<div class="child">
+      <div class="productShot">
+        <img src="/public/images/${p.imageFile}"/></a>
+      </div>
+      <label class="productName">
+        ${p.productName}
+      </label>
+      <label class="price">
+        $${p.price}
+      </label>
+      <br>
+      <label class="description">
+        ${p.productDescription}
+      </label>
+    </div>
+
+	<form action="makePayment" method="POST">
+	  <script
+	    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	    data-key="pk_test_FDQ1Zy73XoVihF22fV5g2zdS"
+	    data-amount="${p.price * 100}"
+	    data-name="${p.productName}"
+	    data-description="${p.productDescription}"
+	    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+	    data-locale="auto"
+	    data-zip-code="true"
+	    >
+	  </script>
+	  <input type="hidden" name="sku" value="${p.sku}" />
+	</form>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+#{extends 'main.html' /}
+#{set title:'Products' /}
+<div class="page">
+
+  <h1>Product Selection</h1>
+
+  <div class="parent">
+
+    <h2>Select a Product:</h2>
+
+  #{list items:products, as:'product'}
+    <div class="child">
+      <div class="productShot">
+        <a href="payment?product=${product.sku}"><img src="/public/images/${product.imageFile}"/></a>
+      </div>
+      <label class="productName">
+        ${product.productName}
+      </label>
+      <label class="price">
+        $${product.price}
+      </label>
+      <br>
+      <label class="description">
+        ${product.productDescription}
+      </label>
+    </div>
+  #{/list}
+    
+  </div>
+
+
+</div>
