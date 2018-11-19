@@ -1,3 +1,6 @@
+=================================================================================================================
+Steps to build and run tinybeans_assignment project
+
 0. Download code from repo https://github.com/SansStef/tinybeans_assignment
 
 1. install java8 jdk https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
