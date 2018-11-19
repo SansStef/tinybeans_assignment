@@ -1,3 +1,5 @@
+0. Download code from repo https://github.com/SansStef/tinybeans_assignment
+
 1. install java8 jdk https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 2. install play 1.4.5 https://www.playframework.com/releases
